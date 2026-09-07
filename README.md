@@ -34,7 +34,7 @@
 </head>
 <body class="relative min-h-screen glow-effect selection:bg-indigo-500 selection:text-white">
 
-  <!-- Arka Plan Işık Hüzmeleri -->
+  <!-- Arka Plan Işık Efektleri -->
   <div class="fixed top-0 left-1/4 w-96 h-96 bg-indigo-600/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
   <div class="fixed bottom-10 right-1/4 w-96 h-96 bg-blue-600/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
 
@@ -55,7 +55,7 @@
 
   <!-- Hero Bölümü -->
   <main class="max-w-4xl mx-auto px-6 pt-24 pb-16">
-    <section class="text-center space-y-6">
+    <section id="about" class="text-center space-y-6">
       <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-indigo-500/10 text-indigo-400 border border-indigo-500/20">
         <span class="w-2 h-2 rounded-full bg-indigo-400 animate-ping"></span>
         Geliştirmeye ve Öğrenmeye Açık
@@ -66,20 +66,20 @@
       </h1>
 
       <p class="text-lg text-gray-400 max-w-xl mx-auto leading-relaxed">
-        Yönetim Bilişim Sistemleri öğrencisiyim. Backend mimarileri, veri tabanı sistemleri ve iş zekası analitiğini modern çözümlerle birleştiriyorum.
+        Yönetim Bilişim Sistemleri öğrencisiyim. Backend geliştirme, veri tabanı mimarileri ve iş zekası analitiğini modern çözümlerle birleştiriyorum.
       </p>
 
       <div class="flex justify-center gap-4 pt-2">
         <a href="https://github.com/gorkemagrr" target="_blank" class="glass-card px-5 py-2.5 rounded-xl hover:text-indigo-400 flex items-center gap-2 text-sm font-medium">
           <i class="fa-brands fa-github text-lg"></i> GitHub
         </a>
-        <a href="#" target="_blank" class="glass-card px-5 py-2.5 rounded-xl hover:text-indigo-400 flex items-center gap-2 text-sm font-medium">
+        <a href="https://linkedin.com" target="_blank" class="glass-card px-5 py-2.5 rounded-xl hover:text-indigo-400 flex items-center gap-2 text-sm font-medium">
           <i class="fa-brands fa-linkedin text-lg"></i> LinkedIn
         </a>
       </div>
     </section>
 
-    <!-- Yetenekler (Skills Bento Grid) -->
+    <!-- Yetenekler (Bento Grid) -->
     <section id="skills" class="mt-28 space-y-6">
       <h2 class="text-2xl font-bold text-white flex items-center gap-2">
         <i class="fa-solid fa-layer-group text-indigo-400 text-xl"></i> Uzmanlıklar & Teknolojiler
@@ -90,7 +90,7 @@
           <i class="fa-brands fa-python text-3xl text-yellow-400 mb-4"></i>
           <div>
             <h3 class="font-semibold text-white">Python & Django</h3>
-            <p class="text-xs text-gray-400 mt-1">Web API & Otomasyon</p>
+            <p class="text-xs text-gray-400 mt-1">Web API & Backend</p>
           </div>
         </div>
 
@@ -120,18 +120,17 @@
       </div>
     </section>
 
-    <!-- Projeler Bölümü -->
+    <!-- Projeler -->
     <section id="projects" class="mt-28 space-y-6">
       <h2 class="text-2xl font-bold text-white flex items-center gap-2">
         <i class="fa-solid fa-laptop-code text-indigo-400 text-xl"></i> Öne Çıkan Çalışmalar
       </h2>
 
       <div class="grid md:grid-cols-2 gap-6">
-        <!-- Proje 1 -->
         <div class="glass-card p-6 rounded-2xl space-y-4">
           <div class="flex justify-between items-start">
             <h3 class="text-lg font-bold text-white">Django Web Framework Projesi</h3>
-            <a href="#" class="text-gray-400 hover:text-white"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            <a href="https://github.com/gorkemagrr" target="_blank" class="text-gray-400 hover:text-white"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
           </div>
           <p class="text-sm text-gray-400 leading-relaxed">
             Dinamik veritabanı entegrasyonu ve kullanıcı yetkilendirme modüllerine sahip tam teşekküllü backend uygulaması.
@@ -143,11 +142,10 @@
           </div>
         </div>
 
-        <!-- Proje 2 -->
         <div class="glass-card p-6 rounded-2xl space-y-4">
           <div class="flex justify-between items-start">
             <h3 class="text-lg font-bold text-white">İş Zekası & Satış Dashboard</h3>
-            <a href="#" class="text-gray-400 hover:text-white"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            <a href="https://github.com/gorkemagrr" target="_blank" class="text-gray-400 hover:text-white"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
           </div>
           <p class="text-sm text-gray-400 leading-relaxed">
             İleri Excel fonksiyonları ve Power BI DAX formülleriyle kurgulanmış, dinamik KPI gösterge panelleri.
@@ -161,12 +159,12 @@
       </div>
     </section>
 
-    <!-- İletişim & Alt Kısım -->
+    <!-- İletişim -->
     <section id="contact" class="mt-28 text-center space-y-6 pb-12">
       <div class="glass-card p-8 rounded-3xl max-w-xl mx-auto space-y-4">
         <h2 class="text-2xl font-bold text-white">Bir Proje mi Düşünüyorsun?</h2>
-        <p class="text-sm text-gray-400">Veri analitiği, web geliştirme veya yazılım fikirlerin için iletişime geçebilirsin.</p>
-        <a href="mailto:ornek@mail.com" class="inline-block mt-2 px-6 py-3 rounded-xl bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white font-medium text-sm transition">
+        <p class="text-sm text-gray-400">Veri analitiği, web geliştirme veya yazılım fikirlerin için bana ulaşabilirsin.</p>
+        <a href="mailto:gorkemagir@gmail.com" class="inline-block mt-2 px-6 py-3 rounded-xl bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white font-medium text-sm transition">
           Mail Gönder
         </a>
       </div>
@@ -174,7 +172,7 @@
     </section>
   </main>
 
-  <!-- Fare Takip Eden Glow Efekti Scripti -->
+  <!-- Fare Takip Eden Işık Scripti -->
   <script>
     document.addEventListener('mousemove', (e) => {
       document.body.style.setProperty('--mouse-x', `${e.clientX}px`);
